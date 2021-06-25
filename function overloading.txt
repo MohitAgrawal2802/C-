@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+void swap(int &x,int &y);
+void swap(char &m,char &n);
+int main()
+{
+int x,y;
+char m,n;
+cout<<"Enter 2 integers:";
+cin>>x>>y;
+cout<<"Enter 2 characters:";
+cin>>m>>n;
+cout<<"\nIntegers:";
+cout<<"\nx="<<x<<"\ny="<<y;
+swap(x,y);
+cout<<"\nAfter swapping";
+cout<<"\nx="<<x<<"\ny="<<y;
+cout<<"\nm="<<m<<"\n n="<<n;
+swap(m,n);
+cout<<"\nAfter swapping";
+cout<<"\nm="<<m<<"\n n="<<n;
+return 0;
+}
+void swap(int &a,int &b)
+{
+int temp;
+temp=a;
+a=b;
+b=temp;
+}
+
+void swap(char &a, char &b)
+{
+char temp;
+temp=a;
+a=b;
+b=temp;
+}
